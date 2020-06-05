@@ -24,7 +24,7 @@ anio = IntVar()
 
 #--Convertir fecha a binario funcion 1
 
-#--Retorno de días Vividos
+#--Retorno de días Vividos funcion 2
 def conteoDias():
     fechaString = f"{anio.get()}-{mes.get()}-{dia.get()}"
     date_object = datetime.strptime(fechaString, '%Y-%m-%d')

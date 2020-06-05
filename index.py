@@ -6,14 +6,14 @@ from datetime import datetime
 
 raiz = Tk()
 raiz.geometry("500x500")
-raiz.title("Ejecución de Funciones")
+raiz.title("Examen final by Osman Cordero")
 miFrame= Frame()
 miFrame.pack()
-bienvenido = Label(miFrame, text="BIENVENIDO")
+bienvenido = Label(miFrame, text="BIENVENIDO A MI PROGRAMA")
 bienvenido.grid(row=0, column=0)
 bienvenido.config(font=('Arial', 16))
 
-#--Funciones
+#Funciones
 
 
 nombre = StringVar()

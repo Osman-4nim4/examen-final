@@ -22,7 +22,7 @@ dia = IntVar()
 mes = IntVar()
 anio = IntVar()
 
-#--Convertir fecha a binario
+#--Convertir fecha a binario funcion 1
 
 #--Retorno de días Vividos
 def conteoDias():

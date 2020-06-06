@@ -63,7 +63,7 @@ def conteoLetras():
     lblResp.configure(text =respuesta )
 
 
-#Conteo de Vocales y Consonantes
+#vocalConsonante
 def vocalConsonante():
     sNombre = f"{nombre.get()}"
     sApellido = f"{apellido.get()}"

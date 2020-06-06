@@ -23,7 +23,15 @@ mes = IntVar()
 anio = IntVar()
 
 #binario(en desarrollo)
+def binario ():
+    uno=int(dia.get())
+    dos=int(mes.get())
+    tres=int(anio.get())
+    bindia=format(uno, '0b' )
+    binmes=format(dos, '0b')
+    binanio=format(tres, '0b')
 
+    lblResp['text'] = "La fecha es: {}/{}/{} y  en binario es:{}/{}/{}".format(uno,dos,tres,bindia,binmes,binanio)
 #dias vividos
 def conteoDias():
     fechaString = f"{anio.get()}-{mes.get()}-{dia.get()}"
@@ -121,7 +129,7 @@ txtanio=Entry(miFrame, textvariable =anio)
 txtanio.grid(row=5, column=1)
 
 #Botones
-btnFuncion1 = Button(miFrame, text="Función 1")
+btnFuncion1 = Button(miFrame, text="Función 1", command=binario)
 btnFuncion1.grid(row=6, column=0)
 btnFuncion1.config(padx=10, pady=10)
 btnFuncion2 = Button(miFrame, text = "Función 2", command=conteoDias)

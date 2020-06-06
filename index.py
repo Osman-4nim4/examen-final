@@ -65,8 +65,10 @@ def conteoLetras():
 
 #Conteo de Vocales y Consonantes
 #Nombre al alReves
-
-
+def ALREVES():
+    cajita = nombre.get()+" "+apellido.get()
+    cajita = cajita[::-1]
+    lblResp["text"] = nombre.get() + " " + apellido.get() + " al revés es: " + cajita
 #Nombre
 lblnombre= Label(miFrame, text="Nombre:")
 lblnombre.grid(row=1, column=0)
@@ -115,7 +117,7 @@ btnFuncion3.config(padx=10, pady=10)
 btnFuncion4 = Button(miFrame, text = "Función 4")
 btnFuncion4.grid(row=7, column=1)
 btnFuncion4.config(padx=10, pady=10)
-btnFuncion5 = Button(miFrame, text = "Función 5")
+btnFuncion5 = Button(miFrame, text = "Función 5", command=ALREVES)
 btnFuncion5.grid(row=8, column=0)
 btnFuncion5.config(padx=10, pady=10)
 #Respuesta

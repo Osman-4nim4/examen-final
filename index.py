@@ -59,12 +59,12 @@ def conteoLetras():
     if conteoN % 2 == 0:
         r1 = f"{sNombre} su Nombre es de número Par"
     else:
-        r1 = f"{sNombre} su Nombre es de número Inpar"
+        r1 = f"{sNombre} su Nombre es de número Impar"
 
     if conteoA % 2 == 0:
         r2 = f"{sApellido} su Apellido es de número Par."
     else:
-        r2 = f"{sApellido} su Apellido es de número Inpar."
+        r2 = f"{sApellido} su Apellido es de número Impar."
 
     respuesta = f"{r1} y  {r2} "
 
